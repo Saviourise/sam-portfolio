@@ -13,7 +13,7 @@ function App() {
         <Route path="work" element={<Projects />} />
         <Route path="projects" element={<Projects />} />
         <Route path="about" element={<About />} />
-        <Route path="contact" element={<div style={{ padding: '80px 60px', fontFamily: 'var(--font-heading)', fontSize: '48px', fontWeight: 900, textTransform: 'uppercase' }}>Contact — Coming Soon</div>} />
+        <Route path="contact" element={<div />} />
       </Route>
     </Routes>
   )
