@@ -15,6 +15,7 @@ interface ProjectCardProps {
   title: string
   summary: string[]
   result: string
+  client?: string
   info: InfoRow[]
   links: ProjectLink[]
 }
@@ -70,15 +71,17 @@ export default function ProjectCard({
           <span className="font-body text-[11px] font-bold uppercase tracking-[0.12em] text-muted">
             Project Summary
           </span>
-          {summary.map((para, i) => (
-            <p key={i} className="font-body text-[14px] text-muted leading-[1.75]">
-              {para}
+          <div className="flex flex-col gap-10">
+            {summary.map((para, i) => (
+              <p key={i} className="font-body text-[14px] text-muted leading-[1.75]">
+                {para}
+              </p>
+            ))}
+            <p className="font-body text-[14px] text-muted leading-[1.75]">
+              <span className="text-white font-medium">Result: </span>
+              {result}
             </p>
-          ))}
-          <p className="font-body text-[14px] text-muted leading-[1.75]">
-            <span className="text-white font-medium">Result: </span>
-            {result}
-          </p>
+          </div>
         </div>
 
         <div className="flex flex-col mt-2">
@@ -86,7 +89,7 @@ export default function ProjectCard({
             Project Info
           </span>
           {info.map((row, i) => (
-            <div key={i} className="border-t border-border py-3 flex items-center gap-6">
+            <div key={i} className="border-t border-border py-3 flex items-center gap-6 justify-between">
               <span className="font-body text-[12px] uppercase tracking-[0.08em] text-muted w-16">{row.label}</span>
               <span className="font-body text-[14px] text-white">{row.value}</span>
             </div>
