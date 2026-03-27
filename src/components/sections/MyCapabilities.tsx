@@ -36,6 +36,41 @@ export default function MyCapabilities() {
             'Bug Tracking',
           ]}
         />
+        <CapabilitySection
+          label="Tools"
+          items={[
+            'Jira',
+            'Microsoft Excel',
+            'FigJam',
+            'Asana',
+            'Trello',
+            'ClickUp',
+            'Mixpanel (User Behavior Tracking)',
+            'Notion',
+            'Google Analytics',
+            'Postman',
+            'SQL',
+            'Figma',
+            'Swagger',
+            'GitHub',
+            'CRM Tools',
+            'Power BI',
+            'Jenkins',
+            'AI Tools',
+          ]}
+        />
+        <CapabilitySection
+          label="Technical Foundation"
+          items={[
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'jQuery',
+            'Python',
+            'UI/UX',
+            'Tailwind CSS',
+          ]}
+        />
       </div>
 
     </section>
