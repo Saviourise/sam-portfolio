@@ -11,7 +11,7 @@ export default function ProductHighlights() {
       </h2>
 
       <div className="flex flex-col gap-20">
-        {projects.map((project, i) => (
+        {projects.slice(0, 3).map((project, i) => (
           <ProjectCard key={i} {...project} />
         ))}
       </div>
