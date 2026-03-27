@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(cp \"C:\\\\Users\\\\savio\\\\Downloads\\\\image \\(4\\).png\" \"C:\\\\Users\\\\savio\\\\Documents\\\\Work\\\\Portfolio\\\\sam-portfolio\\\\src\\\\assets\\\\samuel.png\")",
+      "Bash(cp \"C:\\\\Users\\\\savio\\\\Downloads\\\\sam_zip_extract\\\\Group 9.png\" \"C:\\\\Users\\\\savio\\\\Documents\\\\Work\\\\Portfolio\\\\sam-portfolio\\\\src\\\\assets\\\\references-btn.png\")",
+      "Bash(cp \"C:\\\\Users\\\\savio\\\\Downloads\\\\sam_zip_extract\\\\Rectangle 11.png\" \"C:\\\\Users\\\\savio\\\\Documents\\\\Work\\\\Portfolio\\\\sam-portfolio\\\\src\\\\assets\\\\sidebar-bg.png\")",
+      "Bash(mkdir -p \"C:\\\\Users\\\\savio\\\\Documents\\\\Work\\\\Portfolio\\\\sam-portfolio\\\\src\\\\components\\\\layout\")",
+      "Bash(mkdir -p \"C:\\\\Users\\\\savio\\\\Documents\\\\Work\\\\Portfolio\\\\sam-portfolio\\\\src\\\\components\\\\sections\")",
+      "Bash(mkdir -p \"C:\\\\Users\\\\savio\\\\Documents\\\\Work\\\\Portfolio\\\\sam-portfolio\\\\src\\\\pages\")",
+      "Bash(npm run:*)",
+      "Bash(node -e \"const fs = require\\(''fs''\\); const buf = fs.readFileSync\\(''src/assets/samuel.png''\\); const w = buf.readUInt32BE\\(16\\); const h = buf.readUInt32BE\\(20\\); console.log\\(''Width:'', w, ''Height:'', h, ''Ratio:'', \\(h/w\\).toFixed\\(2\\)\\)\")",
+      "Bash(\"C:\\\\Users\\\\savio\\\\Documents\\\\Work\\\\Portfolio\\\\sam-portfolio\\\\src\\\\components\\\\sections\\\\Hero.tsx\":*)",
+      "Bash(printf 'PLACEHOLDER\\\\n')"
+    ]
+  }
+}
