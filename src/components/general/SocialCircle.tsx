@@ -14,10 +14,8 @@ const SocialCircle = ({
             rel={external ? 'noopener noreferrer' : undefined}
             className="
           shrink-0 w-11 h-11 rounded-full
-          flex items-center justify-center
-          text-white
-          border border-white/20
-          hover:border-accent hover:bg-accent/10
+          flex items-center justify-center bg-accent/10
+          text-accent
           transition-colors duration-200
         "
         >
