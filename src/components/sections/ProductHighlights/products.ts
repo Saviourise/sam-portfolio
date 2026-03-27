@@ -26,7 +26,7 @@ const projects = [
       { label: 'Role', value: 'Product Manager / QA' },
     ],
     links: [
-      { label: 'Live Demo', href: '#' },
+      { label: 'Live Demo', href: 'https://stylemeup.ng' },
       { label: 'Case Study', href: '#' },
     ],
   },
@@ -47,7 +47,7 @@ const projects = [
       { label: 'Role', value: 'Co-founder | Product Manager' },
     ],
     links: [
-      { label: 'Live Demo', href: '#' },
+      { label: 'Live Demo', href: 'https://prodily.tech' },
     ],
   },
   {
@@ -67,7 +67,7 @@ const projects = [
       { label: 'Role', value: 'Product Manager' },
     ],
     links: [
-      { label: 'View Project', href: '#' },
+      { label: 'View Project', href: 'https://dailyfood.app' },
     ],
   },
   {
@@ -86,7 +86,7 @@ const projects = [
       { label: 'Role', value: 'Project Manager' },
     ],
     links: [
-      { label: 'View Project', href: '#' },
+      { label: 'View Project', href: 'https://wattlens.com' },
     ],
   },
   {

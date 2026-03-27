@@ -102,6 +102,8 @@ export default function ProjectCard({
             <a
               key={i}
               href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-body font-medium text-[13px] uppercase tracking-[0.08em] text-accent underline underline-offset-[3px] inline-flex items-center gap-1 transition-opacity duration-200 hover:opacity-70"
             >
               {link.label}

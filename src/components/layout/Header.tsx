@@ -40,7 +40,7 @@ export default function Header() {
                 key={item}
                 to={`/${item.toLowerCase()}`}
                 className={({ isActive }) =>
-                  `font-body text-[15px] transition-colors duration-200 ${isActive ? 'text-white' : 'text-muted hover:text-accent'}`
+                  `font-body text-[15px] transition-colors duration-200 ${isActive ? 'text-accent' : 'text-muted hover:text-accent'}`
                 }
               >
                 {item}
