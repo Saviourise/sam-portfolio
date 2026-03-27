@@ -85,13 +85,13 @@ export default function ProjectCard({
         </div>
 
         <div className="flex flex-col mt-2">
-          <span className="font-body text-[11px] font-medium uppercase tracking-[0.12em] text-muted mb-3">
+          <span className="font-body text-base font-medium uppercase tracking-[0.12em] text-white mb-3">
             Project Info
           </span>
           {info.map((row, i) => (
             <div key={i} className="border-t border-border py-3 flex items-center gap-6 justify-between">
-              <span className="font-body text-[12px] uppercase tracking-[0.08em] text-muted w-16">{row.label}</span>
-              <span className="font-body text-[14px] text-white">{row.value}</span>
+              <span className="font-body text-[12px] tracking-[0.08em] text-white w-16">{row.label}</span>
+              <span className="font-body text-[14px] text-muted">{row.value}</span>
             </div>
           ))}
           <div className="border-t border-border" />
