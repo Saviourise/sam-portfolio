@@ -144,7 +144,7 @@ export default function Footer() {
               <button
                 type="submit"
                 disabled={status === 'sending'}
-                className="bg-accent text-bg font-body font-bold text-[13px] uppercase tracking-[0.1em] px-8 py-3 rounded-full hover:bg-accent-hover transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                className="bg-accent text-bg font-body font-bold text-[13px] uppercase tracking-widest px-8 py-3 rounded-full hover:bg-accent-hover transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {status === 'sending' ? 'Sending...' : 'Submit'}
               </button>
