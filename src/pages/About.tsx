@@ -1,6 +1,7 @@
 import { ArrowUpRight } from 'lucide-react'
 import { SocialCircle } from '../components/general'
 import MyCapabilities from '../components/sections/MyCapabilities'
+import MyExperience from '../components/sections/MyExperience'
 import samuelAboutImg from '../assets/samuel-about.png'
 
 function LinkedInIcon() {
@@ -82,8 +83,10 @@ export default function About() {
           />
         </div>
       </section>
-      <hr className="border-border " />
+      <hr className="border-border" />
       <MyCapabilities />
+      <hr className="border-border" />
+      <MyExperience />
     </>
   )
 }
