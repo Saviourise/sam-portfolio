@@ -1,3 +1,6 @@
+import { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser'
+
 function LinkedInIcon() {
   return (
     <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -15,6 +18,28 @@ function XIcon() {
 }
 
 export default function Footer() {
+  const form = useRef<HTMLFormElement>(null)
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!form.current) return
+
+    setStatus('sending')
+    try {
+      await emailjs.sendForm(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      )
+      setStatus('success')
+      form.current.reset()
+    } catch {
+      setStatus('error')
+    }
+  }
+
   return (
     <footer className="w-full border-t border-border">
       <div className="w-full max-w-[1400px] mx-auto px-4 md:px-10 pt-16 pb-10">
@@ -70,49 +95,67 @@ export default function Footer() {
           </div>
 
           {/* Right — contact form */}
-          <div className="flex-1 flex flex-col gap-5">
+          <form ref={form} onSubmit={handleSubmit} className="flex-1 flex flex-col gap-5">
             <div className="flex flex-col gap-1.5">
-              <label className="font-body text-[13px] text-white">Name</label>
+              <label htmlFor="name" className="font-body text-[13px] text-white">Name</label>
               <input
+                id="name"
+                name="name"
                 type="text"
                 placeholder="John Doe"
+                required
                 className="w-full bg-bg-secondary rounded-lg px-4 py-3 font-body text-[14px] text-white placeholder-muted border border-transparent focus:border-border-light focus:outline-none transition-colors duration-200"
               />
             </div>
 
             <div className="flex flex-col gap-1.5">
-              <label className="font-body text-[13px] text-white">Email</label>
+              <label htmlFor="email" className="font-body text-[13px] text-white">Email</label>
               <input
+                id="email"
+                name="email"
                 type="email"
+                required
                 className="w-full bg-bg-secondary rounded-lg px-4 py-3 font-body text-[14px] text-white placeholder-muted border border-transparent focus:border-border-light focus:outline-none transition-colors duration-200"
               />
             </div>
 
             <div className="flex flex-col gap-1.5">
-              <label className="font-body text-[13px] text-white">Subject</label>
+              <label htmlFor="subject" className="font-body text-[13px] text-white">Subject</label>
               <input
+                id="subject"
+                name="subject"
                 type="text"
                 className="w-full bg-bg-secondary rounded-lg px-4 py-3 font-body text-[14px] text-white placeholder-muted border border-transparent focus:border-border-light focus:outline-none transition-colors duration-200"
               />
             </div>
 
             <div className="flex flex-col gap-1.5">
-              <label className="font-body text-[13px] text-white">Message</label>
+              <label htmlFor="message" className="font-body text-[13px] text-white">Message</label>
               <textarea
+                id="message"
+                name="message"
                 rows={5}
+                required
                 className="w-full bg-bg-secondary rounded-lg px-4 py-3 font-body text-[14px] text-white placeholder-muted border border-transparent focus:border-border-light focus:outline-none transition-colors duration-200 resize-none"
               />
             </div>
 
-            <div>
+            <div className="flex items-center gap-4">
               <button
                 type="submit"
-                className="bg-accent text-bg font-body font-bold text-[13px] uppercase tracking-[0.1em] px-8 py-3 rounded-full hover:bg-accent-hover transition-colors duration-200 cursor-pointer"
+                disabled={status === 'sending'}
+                className="bg-accent text-bg font-body font-bold text-[13px] uppercase tracking-[0.1em] px-8 py-3 rounded-full hover:bg-accent-hover transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Submit
+                {status === 'sending' ? 'Sending...' : 'Submit'}
               </button>
+              {status === 'success' && (
+                <span className="font-body text-[13px] text-accent">Message sent successfully!</span>
+              )}
+              {status === 'error' && (
+                <span className="font-body text-[13px] text-red-400">Something went wrong. Please try again.</span>
+              )}
             </div>
-          </div>
+          </form>
 
         </div>
 
