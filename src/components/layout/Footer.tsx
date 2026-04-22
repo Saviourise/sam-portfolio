@@ -64,7 +64,9 @@ export default function Footer() {
               <p className="font-body text-[14px] text-white leading-[1.7]">
                 For more info, here's my{' '}
                 <a
-                  href="#"
+                  href="https://drive.google.com/file/d/1ND10GOSHMy8RSurc8BzjR3uDzzU7JsdE/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-accent underline underline-offset-[3px] hover:opacity-70 transition-opacity duration-200"
                 >
                   resume
@@ -74,7 +76,7 @@ export default function Footer() {
 
             <div className="flex items-center gap-5">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/aibangbee-samuel-177140179"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent hover:opacity-70 transition-opacity duration-200"
@@ -83,7 +85,7 @@ export default function Footer() {
                 <LinkedInIcon />
               </a>
               <a
-                href="https://x.com"
+                href="https://x.com/aibangbeesamuel?s=21"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent hover:opacity-70 transition-opacity duration-200"

@@ -38,10 +38,10 @@ export default function Hero() {
 
             <div className="flex items-center flex-wrap mt-10 gap-[14px]">
               <ContactBtn />
-              <SocialCircle href="https://linkedin.com" external>
+              <SocialCircle href="https://www.linkedin.com/in/aibangbee-samuel-177140179" external>
                 <LinkedInIcon />
               </SocialCircle>
-              <SocialCircle href="https://x.com" external>
+              <SocialCircle href="https://x.com/aibangbeesamuel?s=21" external>
                 <XIcon />
               </SocialCircle>
             </div>
@@ -70,10 +70,10 @@ export default function Hero() {
 
           <div className="flex items-center flex-wrap mt-9 gap-3">
             <ContactBtn />
-            <SocialCircle href="https://linkedin.com" external>
+            <SocialCircle href="https://www.linkedin.com/in/aibangbee-samuel-177140179" external>
               <LinkedInIcon />
             </SocialCircle>
-            <SocialCircle href="https://x.com" external>
+            <SocialCircle href="https://x.com/aibangbeesamuel?s=21" external>
               <XIcon />
             </SocialCircle>
           </div>

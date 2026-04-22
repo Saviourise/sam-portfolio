@@ -234,7 +234,9 @@ export default function DailyFoodCaseStudy() {
           </Link>
           <div className="flex items-center gap-6">
             <a
-              href="#"
+              href="https://drive.google.com/file/d/1ND10GOSHMy8RSurc8BzjR3uDzzU7JsdE/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-body font-medium text-[13px] uppercase tracking-[0.08em] text-accent underline underline-offset-[3px] inline-flex items-center gap-1 transition-opacity hover:opacity-70"
             >
               Resume
@@ -243,7 +245,9 @@ export default function DailyFoodCaseStudy() {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://drive.google.com/file/d/1e8v9pTg-W9NbKSLzMAtVjqQzUQi6azgT/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-body font-medium text-[13px] uppercase tracking-[0.08em] text-accent underline underline-offset-[3px] inline-flex items-center gap-1 transition-opacity hover:opacity-70"
             >
               References

@@ -51,7 +51,9 @@ export default function About() {
             <div className="flex items-center gap-3 mt-2 flex-wrap">
               {/* Download Resume button */}
               <a
-                href="#"
+                href="https://drive.google.com/file/d/1ND10GOSHMy8RSurc8BzjR3uDzzU7JsdE/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group relative overflow-hidden inline-flex items-center gap-2 rounded-full whitespace-nowrap cursor-pointer bg-accent text-bg font-body font-semibold uppercase text-[13px] tracking-[0.07em] py-2 pl-5 pr-4 transition-colors duration-200"
               >
                 <span className="absolute inset-0 rounded-full bg-bg scale-x-0 origin-right transition-transform duration-300 ease-in-out group-hover:scale-x-100" />
@@ -63,10 +65,10 @@ export default function About() {
                 </span>
               </a>
 
-              <SocialCircle href="https://linkedin.com" external>
+              <SocialCircle href="https://www.linkedin.com/in/aibangbee-samuel-177140179" external>
                 <LinkedInIcon />
               </SocialCircle>
-              <SocialCircle href="https://x.com" external>
+              <SocialCircle href="https://x.com/aibangbeesamuel?s=21" external>
                 <XIcon />
               </SocialCircle>
             </div>

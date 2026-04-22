@@ -44,6 +44,7 @@ const experiences: ExperienceEntryProps[] = [
     title: 'Product Manager | Project Manager',
     dateRange: 'Jan 2024 — Present',
     company: 'Teknesis Branding Agency',
+    companyHref: 'https://www.teknesisbrand.com',
     bullets: [
       'Manage end-to-end delivery of digital and web projects across multiple clients.',
       'Coordinate designers, developers, and QA teams to meet project milestones.',
@@ -88,13 +89,17 @@ export default function MyExperience() {
             </span>
             <div className="flex items-center gap-6">
               <a
-                href="#"
+                href="https://drive.google.com/file/d/1ND10GOSHMy8RSurc8BzjR3uDzzU7JsdE/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-body font-medium text-[13px] text-white uppercase tracking-[0.08em] inline-flex items-center gap-1 hover:text-accent transition-colors duration-200"
               >
                 Resume <ArrowUpRight size={13} strokeWidth={2.5} />
               </a>
               <a
-                href="#"
+                href="https://drive.google.com/file/d/1e8v9pTg-W9NbKSLzMAtVjqQzUQi6azgT/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-body font-medium text-[13px] text-white uppercase tracking-[0.08em] inline-flex items-center gap-1 hover:text-accent transition-colors duration-200"
               >
                 Reference <ArrowUpRight size={13} strokeWidth={2.5} />

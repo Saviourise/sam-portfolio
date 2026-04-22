@@ -48,12 +48,14 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Desktop Download */}
+          {/* Desktop Download Resume */}
           <a
-            href="#"
+            href="https://drive.google.com/file/d/1ND10GOSHMy8RSurc8BzjR3uDzzU7JsdE/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:flex items-center gap-1 font-body font-medium text-[13px] text-accent uppercase tracking-[0.06em] underline underline-offset-[3px] transition-opacity duration-200 hover:opacity-70"
           >
-            Download
+            Download Resume
             <ArrowUpRight size={13} strokeWidth={2.5} />
           </a>
 
@@ -87,10 +89,12 @@ export default function Header() {
               </NavLink>
             ))}
             <a
-              href="#"
+              href="https://drive.google.com/file/d/1ND10GOSHMy8RSurc8BzjR3uDzzU7JsdE/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-7 inline-flex items-center gap-1.5 font-body font-medium text-[14px] text-accent uppercase tracking-[0.08em] underline underline-offset-[3px]"
             >
-              Download CV <ArrowUpRight size={14} />
+              Download Resume <ArrowUpRight size={14} />
             </a>
           </div>
         )}

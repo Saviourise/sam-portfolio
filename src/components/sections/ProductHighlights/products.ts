@@ -26,7 +26,7 @@ const projects = [
       { label: 'Role', value: 'Product Manager / QA' },
     ],
     links: [
-      { label: 'Live Demo', href: 'https://stylemeup.ng' },
+      { label: 'Live Demo', href: 'https://www.stylemeup.ng/' },
     ],
   },
   {
@@ -46,7 +46,7 @@ const projects = [
       { label: 'Role', value: 'Co-founder | Product Manager' },
     ],
     links: [
-      { label: 'Live Demo', href: 'https://prodily.tech' },
+      { label: 'Live Demo', href: 'https://www.prodily.tech' },
     ],
   },
   {
@@ -66,7 +66,7 @@ const projects = [
       { label: 'Role', value: 'Product Manager' },
     ],
     links: [
-      { label: 'View Project', href: 'https://dailyfood.app' },
+      { label: 'View Project', href: 'https://www.dailyfood.app/' },
       { label: 'Case Study', href: '/projects/dailyfood' },
     ],
   },
@@ -86,7 +86,7 @@ const projects = [
       { label: 'Role', value: 'Project Manager' },
     ],
     links: [
-      { label: 'View Project', href: 'https://wattlens.com' },
+      { label: 'View Project', href: 'https://www.wattlens.com/' },
     ],
   },
   {
@@ -106,7 +106,7 @@ const projects = [
       { label: 'Role', value: 'Project Manager | Business Developer' },
     ],
     links: [
-      { label: 'View Project', href: '#' },
+      { label: 'View Project', href: 'https://www.rayandsonsbridgend.com/' },
     ],
   },
   {
@@ -124,7 +124,7 @@ const projects = [
       { label: 'Role', value: 'Project Manager | Executive Assistant' },
     ],
     links: [
-      { label: 'Live Demo', href: '#' },
+      { label: 'Live Demo', href: 'https://www.expresscleaningconsult.com/' },
     ],
   },
   {
@@ -149,6 +149,7 @@ const projects = [
   {
     badge: 'contract',
     image: kuponlogisticsImg,
+
     imageAlt: 'Kupon Logistics screenshot',
     title: 'Kupon Logistics',
     summary: [
@@ -161,7 +162,7 @@ const projects = [
       { label: 'Role', value: 'Web Developer' },
     ],
     links: [
-      { label: 'Live Demo', href: '#' },
+      { label: 'Live Demo', href: 'https://kupon.com.ng/' },
     ],
   },
   {
@@ -180,7 +181,7 @@ const projects = [
       { label: 'Role', value: 'Product Manager / QA' },
     ],
     links: [
-      { label: 'Live Demo', href: '#' },
+      { label: 'Live Demo', href: 'https://esoger.com/' },
     ],
   },
 ]
