@@ -27,7 +27,6 @@ const projects = [
     ],
     links: [
       { label: 'Live Demo', href: 'https://stylemeup.ng' },
-      { label: 'Case Study', href: '#' },
     ],
   },
   {
@@ -68,6 +67,7 @@ const projects = [
     ],
     links: [
       { label: 'View Project', href: 'https://dailyfood.app' },
+      { label: 'Case Study', href: '/projects/dailyfood' },
     ],
   },
   {
@@ -181,7 +181,6 @@ const projects = [
     ],
     links: [
       { label: 'Live Demo', href: '#' },
-      { label: 'Case Study', href: '#' },
     ],
   },
 ]

@@ -3,6 +3,7 @@ import Layout from './components/layout/Layout'
 import Home from './pages/Home'
 import About from './pages/About'
 import Projects from './pages/Projects'
+import DailyFoodCaseStudy from './pages/DailyFoodCaseStudy'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="work" element={<Projects />} />
         <Route path="projects" element={<Projects />} />
+        <Route path="projects/dailyfood" element={<DailyFoodCaseStudy />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<div />} />
       </Route>

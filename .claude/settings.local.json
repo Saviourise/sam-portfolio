@@ -11,7 +11,11 @@
       "Bash(npm run:*)",
       "Bash(node -e \"const fs = require\\(''fs''\\); const buf = fs.readFileSync\\(''src/assets/samuel.png''\\); const w = buf.readUInt32BE\\(16\\); const h = buf.readUInt32BE\\(20\\); console.log\\(''Width:'', w, ''Height:'', h, ''Ratio:'', \\(h/w\\).toFixed\\(2\\)\\)\")",
       "Bash(\"C:\\\\Users\\\\savio\\\\Documents\\\\Work\\\\Portfolio\\\\sam-portfolio\\\\src\\\\components\\\\sections\\\\Hero.tsx\":*)",
-      "Bash(printf 'PLACEHOLDER\\\\n')"
+      "Bash(printf 'PLACEHOLDER\\\\n')",
+      "Bash(xargs grep *)",
+      "Bash(cp \"C:/Users/savio/Downloads/Rectangle 14.png\" \"C:/Users/savio/Documents/Work/Portfolio/sam-portfolio/src/assets/project-images/dailyfood-rect.png\")",
+      "Bash(cp \"C:/Users/savio/Downloads/work \\(3\\).png\" \"C:/Users/savio/Documents/Work/Portfolio/sam-portfolio/src/assets/project-images/dailyfood-case-1.png\")",
+      "Bash(cp \"C:/Users/savio/Downloads/work \\(4\\).png\" \"C:/Users/savio/Documents/Work/Portfolio/sam-portfolio/src/assets/project-images/dailyfood-case-2.png\")"
     ]
   }
 }

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 interface InfoRow {
   label: string
   value: string
@@ -98,18 +100,29 @@ export default function ProjectCard({
         </div>
 
         <div className="flex items-center gap-8 mt-1">
-          {links.map((link, i) => (
-            <a
-              key={i}
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-body font-medium text-[13px] uppercase tracking-[0.08em] text-accent underline underline-offset-[3px] inline-flex items-center gap-1 transition-opacity duration-200 hover:opacity-70"
-            >
-              {link.label}
-              <ArrowUpRightIcon />
-            </a>
-          ))}
+          {links.map((link, i) =>
+            link.href.startsWith('/') ? (
+              <Link
+                key={i}
+                to={link.href}
+                className="font-body font-medium text-[13px] uppercase tracking-[0.08em] text-accent underline underline-offset-[3px] inline-flex items-center gap-1 transition-opacity duration-200 hover:opacity-70"
+              >
+                {link.label}
+                <ArrowUpRightIcon />
+              </Link>
+            ) : (
+              <a
+                key={i}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-body font-medium text-[13px] uppercase tracking-[0.08em] text-accent underline underline-offset-[3px] inline-flex items-center gap-1 transition-opacity duration-200 hover:opacity-70"
+              >
+                {link.label}
+                <ArrowUpRightIcon />
+              </a>
+            )
+          )}
         </div>
 
       </div>
